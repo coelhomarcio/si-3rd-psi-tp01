@@ -18,6 +18,7 @@ article {
     margin: auto;
     background-color: #fafafa;
     display: flex;
+    flex-wrap: wrap;
     border-radius: 2px;
     box-shadow: 0 0 .1em .5em #fafafa;
 }
