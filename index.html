@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/main.js">
+		</script>
+		<title>TP 01</title>
+	</head>
+
+	<body>
+		<h1>
+			TP 01
+		</h1>
+
+		<p>
+			FATEC Rubens Lara – Santos/SP<br>
+			Sistemas para Internet<br>
+			3º Ciclo – 2º Semestre/2020<br>
+			Marcio Coelho<br>
+			Prof.º Alexandre Garcia de Oliveira
+		</p>
+
+		<article>
+			<section>
+				<h2>
+					1) Faça uma função que calcule o mínimo de um vetor de números.
+				</h2>
+
+				<p>
+					(Vetor utilizado: 2, 3, 5, -3, 9, -4)
+				</p>
+
+				<div class="ex01">
+					<script>
+						const vetorNum = [2, 3, 5, -3, 9, -4]
+						document.querySelector(".ex01").textContent =
+							`No vetor: "${vetorNum}", o menor valor é "${vetorMin(vetorNum)}".`
+					</script>
+				</div>
+			</section>
+
+			<section>
+				<h2>
+					2) Faça uma função que receba, via parâmetro, um vetor de strings e retorne a soma dos tamanhos.
+				</h2>
+
+				<p>
+					(Vetor utilizado: "JavaScript", "Rubens Lara", "FATEC", "Hello World!")
+				</p>
+
+				<div class="ex02">
+					<script>
+						const vetorString = ["JavaScript", "Rubens Lara", "FATEC", "Hello World!"]
+	                    document.querySelector(".ex02").textContent =
+		                    `No vetor: "${vetorString}", a soma dos tamanhos das strings é ${somaVetorString(vetorString)}.`
+					</script>
+				</div>
+			</section>
+
+			<section>
+				<h2>
+					3) Faça uma função que reverta a ordem de uma lista passada por parâmetro.
+				</h2>
+
+				<p>
+					(Vetor utilizado: 2, 3, 5, -3, 9, -4)
+				</p>
+
+				<div class="ex03">
+					<script>
+						document.querySelector(".ex03").textContent =
+							`No vetor: "${vetorNum}", com a ordem invertida é "${inverteVetor(vetorNum)}".`
+					</script>
+				</div>
+			</section>
+
+			<section>
+				<h2>
+					4) Faça uma função que verifique se uma palavra é um palíndromo.
+				</h2>
+
+				<p>
+					(Utilizado as sentenças:
+					"Socorram me subi no onibus em Marrocos" e
+					"Socorram me subi num onibus em Marrocos")
+				</p>
+
+				<div class="ex04">
+					<script>
+						const word = "Socorram me subi no onibus em Marrocos"
+						const word2 = "Socorram me subi num onibus em Marrocos"
+						document.querySelector(".ex04").textContent =
+							`Na sentença: "${word}", ${palindromo(word, true)} e
+							na sentença: "${word2}", ${palindromo(word2, true)}.`
+					</script>
+				</div>
+			</section>
+
+			<section>
+				<h2>
+					5) Faça uma função que calcule a média aritmética e o desvio padrão de um vetor de números.
+				</h2>
+
+				<p>
+					(Vetor utilizado: 2, 3, 5, -3, 9, -4)
+				</p>
+
+				<div class="ex05">
+					<script>
+						const ex05 = dp(vetorNum)
+						document.querySelector(".ex05").textContent =
+							`No vetor: "${vetorNum}", a média aritmética é ${ex05[0]} e o desvio padrão é ${ex05[1]}.`
+					</script>
+				</div>
+			</section>
+		</article>
+	</body>
+
+</html>

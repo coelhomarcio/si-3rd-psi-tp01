@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Gill Sans", sans-serif;
+    font-size: 1.2rem;
+    background-color: #2b2b2b;
+    color: #2b2b2b;
+}
+
+h1,
+body > p {
+    text-align: center;
+    color: #fafafa;
+}
+
+article {
+    width: 90%;
+    margin: auto;
+    background-color: #fafafa;
+    display: flex;
+    border-radius: 2px;
+    box-shadow: 0 0 .1em .5em #fafafa;
+}
+
+section {
+    padding: 1em;
+}
